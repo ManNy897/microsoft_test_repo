@@ -160,47 +160,52 @@
         "longitude": 103.831189303546
     },
     "Margaret Drive Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.29748567106686,
         "longitude": 103.804715225285
     },
     "Woodleigh Village Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.3397961360031,
         "longitude": 103.872090241567
     },
     "Anchorvale Village Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.39691417603694,
         "longitude": 103.888489618777
     },
+    "Fernvale Hawker Centre & Market": {
+        "photo_url": "",
+        "latitude": 1.39159232727757,
+        "longitude": 103.877060478847
+    },
     "Punggol Town Hub Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.40818996870647,
         "longitude": 103.904805657576
     },
     "Punggol Digital District Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.41456688638677,
         "longitude": 103.908252830309
     },
     "Senja Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.38712226320812,
         "longitude": 103.76126288878
     },
     "Bukit Batok Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.35521457121361,
         "longitude": 103.741825836536
     },
     "Market Street Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.2844248503218,
         "longitude": 103.850164578087
     },
     "Buangkok Hawker Centre": {
-        "photo_url": null,
+        "photo_url": "",
         "latitude": 1.38238755827879,
         "longitude": 103.892403203249
     },
@@ -258,6 +263,11 @@
         "photo_url": "http://www.nea.gov.sg/images/default-source/Hawker-Centres-Division/bukit-panjang-hawker-centre.jpg",
         "latitude": 1.37760053528611,
         "longitude": 103.772489583206
+    },
+    "Bukit Canberra Hawker Centre": {
+        "photo_url": "",
+        "latitude": 1.44921660555282,
+        "longitude": 103.822399230842
     },
     "Market Street Interim Hawker Centre": {
         "photo_url": "http://www.nea.gov.sg/images/default-source/Hawker-Centres-Division/resize_1262225979894.jpg",
@@ -428,6 +438,11 @@
         "photo_url": "http://www.nea.gov.sg/images/default-source/Hawker-Centres-Division/resize_1265166819326.jpg",
         "latitude": 1.31615991374589,
         "longitude": 103.850225081031
+    },
+    "Changi Village Blk 2 and 3": {
+        "photo_url": "http://www.nea.gov.sg/images/default-source/Hawker-Centres-Division/resize_1267846802175.jpg",
+        "latitude": 1.38915172065006,
+        "longitude": 103.988245749103
     },
     "Chomp Chomp Food Centre": {
         "photo_url": "http://www.nea.gov.sg/images/default-source/Hawker-Centres-Division/resize_1262155330191.jpg",

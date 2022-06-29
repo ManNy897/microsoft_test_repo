@@ -11,6 +11,8 @@ def get_closest_hawker_locations(latitude, longitude):
 	queue = PriorityQueue()
 	for location_name in hawker_data:
 		hawker_location = (hawker_data[location_name]["latitude"], hawker_data[location_name]["longitude"])
+		
+		#we store negative location so that value at front of queue will be largest and we can remove it
 		dist = distance.distance(curr_location, hawker_location).miles * -1
 		hawker_photo = hawker_data[location_name]["photo_url"]
 
@@ -20,7 +22,7 @@ def get_closest_hawker_locations(latitude, longitude):
 		if queue.queue[0][0] < dist:
 			queue.get()
 			queue.put((dist,location_name, hawker_photo)) 
-			
+
 	print(queue.queue)
 
 	return list(queue.queue)
