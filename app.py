@@ -9,7 +9,7 @@ cors = CORS(app)
 
 
 @app.route("/test.py" , methods=['GET'])  # consider to use more elegant URL in your JS
-def get_x():
+def get_hawker_locations():
     print("in get method")
     args = request.args
     print(args)
