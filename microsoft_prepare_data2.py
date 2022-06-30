@@ -2,11 +2,13 @@ import json
 import csv
 import re
 
-# import xml.etree.ElementTree as ET
-# from lxml import etree
+#################################
+#################################
+#this file splits the data up into
+#four grids and returns each as its
+#own dataset
 
-#############################################################
-#####function to extract name and photo url from xml string using regex
+#function to extract name and photo url from xml string using regex
 
 name_regex = '<th>NAME</th> <td>(.*?)</td>'
 photo_regex = '<th>PHOTOURL</th> <td>(.*?)</td>'
@@ -28,8 +30,7 @@ def get_name_and_photo_url(xml_string):
 		print("no photo")
 	return name, photo_url
 
-################################
-###function to update max and min values
+#####function to update max and min values
 
 minLat = float('inf')
 maxLat = float('-inf')
@@ -52,8 +53,7 @@ def update_min_max_values(latitude, longitude):
 
 
 
-###############################
-##############read the file####
+###read the file
 with open("hawker-centres-geojson.geojson", "r") as inputfile:
 	data = json.load(inputfile)
 
@@ -68,21 +68,10 @@ for feature in data['features']:
 
 	name, photo_url = get_name_and_photo_url(xml)
 
-	# print(xml)
-	# root = etree.fromstring(xml)
-	# name = root.xpath('.//table/tr/th[text()="NAME"]/../td')[0].text
-	# photo_url = root.xpath('.//table/tr/th[text()="PHOTOURL"]/../td')[0].text
 	hawker_centres[name] = {"photo_url":photo_url, "latitude":latitude, "longitude":longitude}
 	hawker_centers_list.append([name, photo_url, longitude, latitude])
 
-print(len(hawker_centres))
-print(minLon)
-print(maxLon)
-print(minLat)
-print(maxLat)
-
-###################################
-#######split the data in fourthes##
+#split the data in fourthes
 halfLon = ((maxLon - minLon)/2.0) + minLon
 halfLat = ((maxLat - minLat)/2.0) + minLat
 print(halfLon)
@@ -106,6 +95,7 @@ print(len(hawker_centres_1))
 print(len(hawker_centres_2))
 print(len(hawker_centres_3))
 print(len(hawker_centres_4))
+
 #######################################
 ############write out the datasets#####
 datasets = [hawker_centres_1, hawker_centres_2, hawker_centres_3, hawker_centres_4]

@@ -49,7 +49,7 @@ for feature in data['features']:
 
 #write out result
 json_dataset = json.dumps(hawker_centres, indent = 4)
-with open("json_dataset2.json", "w") as outfile:
+with open("json_dataset.json", "w") as outfile:
 	outfile.write(json_dataset)
 
 

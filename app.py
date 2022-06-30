@@ -6,7 +6,7 @@ from find_nearest import get_closest_hawker_locations
 app = Flask(__name__)
 cors = CORS(app)
 
-@app.route("/get_hawker_locations.py" , methods=['GET'])
+@app.route("/get_hawker_locations" , methods=['GET'])
 def get_hawker_locations():
     latitude = request.args.get("latitude")
     longitude = request.args.get("longitude")
