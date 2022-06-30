@@ -29,6 +29,11 @@
             url: `http://127.0.0.1:5000/get_hawker_locations?latitude=${lat}&longitude=${lon}`,
             async: false
         });
+        console.log(jqXHR)
+        if(jqXHR.status != 200){
+            console.log("failed")
+            alert("failed to get hawker locations given input")
+        }
         var response = jqXHR.responseJSON
         console.log(jqXHR.responseJSON)
 
