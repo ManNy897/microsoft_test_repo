@@ -36,7 +36,6 @@ with open("hawker-centres-geojson.geojson", "r") as inputfile:
 
 #extract required data for each line in dataset
 hawker_centres = {}
-hawker_centers_list = []
 
 for feature in data['features']:
 	longitude = feature["geometry"]["coordinates"][0]
@@ -46,7 +45,6 @@ for feature in data['features']:
 	name, photo_url = get_name_and_photo_url(xml)
 
 	hawker_centres[name] = {"photo_url":photo_url, "latitude":latitude, "longitude":longitude}
-	hawker_centers_list.append([name, photo_url, longitude, latitude])
 
 
 #write out result
